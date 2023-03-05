@@ -1,0 +1,11 @@
+:root {
+    --fonte-principal: 'Montserrat', sans-serif;
+    --fonte-titulos: 'Rubik', sans-serif;
+    --cor-azul: rgb(50, 120, 250);
+}
+
+body {
+    font-family: var(--fonte-principal);
+    color: black;
+    font-size: 18px;
+}

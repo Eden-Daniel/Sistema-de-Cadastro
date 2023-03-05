@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/cabecalho.css">
+    <link rel="stylesheet" href="../style/formulario.css">
+    <link rel="stylesheet" href="../style/camera.css">
+    <title>Sistema de Cadastro</title>
+</head>
+<body>
+    <header class="cabecalho">
+         <a href="#"><h1 class="cabecalho_titulo_inicio">Sistem<span class="cabecalho_titulo_final">Form</span></h1></a>
+        <ul class="cabecalho_lista">
+        <li><a class="cabecalho_lista_link" href="#">Sobre</a></li>
+        <li><a class="cabecalho_lista_link" href="#">Serviços</a></li>
+        <li><input class="cabecalho_pesquisa" type="search" placeholder="Busque aqui"></li>
+        <li><a class="cabecalho_lista_login" href="#">Login</a></li>
+    </ul>
+    </header>
+    <main class="container">
+        <section class="formulario">
+            <div class="formulario_cabecalho">
+                <img src="../imagens/status-2.png" alt="Etapa dois de três">
+                <h2 class="formulario_titulo">Clique no quadro abaixo para capturarmos uma imagen sua!</h2>
+            </div>
+
+            <div class="camera_inicia" data-camera-inicia></div>
+
+            <div class="camera_video" data-camera-video>
+                <video  width="320" height="240" autoplay data-video></video>
+                <button class="formulario_botao" data-tira-foto>Tirar foto</button>
+            </div>
+            <div class="camera_foto" data-camera-foto>
+                <canvas width="320" height="240" data-foto></canvas>
+                <img class="imagem-validação" src="../imagens/ícone check.png" alt="Ícone de validação">
+                <p>Pronto, imagem capturada</p> 
+
+                <input class="formulario_botao" type="submit" value="Enviar" id="enviar" data-enviar>               
+            </div>
+        </section>
+    </main>
+    <script src="../js/camre.js"></script>    
+</body>
+</html>

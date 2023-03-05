@@ -1,0 +1,64 @@
+.cabecalho {
+    align-items: center;
+    display: flex;
+    margin: 2em 1em;
+}
+
+.cabecalho a {
+    text-decoration: none;
+}
+
+.cabecalho_titulo_inicio {
+    color: rgb(50, 120, 250);
+    font-family: var(--fonte-titulos);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.cabecalho_titulo_final {
+    font-style: italic;
+    font-weight: bold;    
+}
+
+.cabecalho_lista {
+    align-items: center;
+    display: flex;
+    flex-basis: 100%;
+    font-size: 20px;
+    justify-content: space-between;
+    margin: 0 3em;
+}
+
+.cabecalho_pesquisa {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 0.40em 1.2em;
+    width: 18vw;
+}
+
+.cabecalho_pesquisa::placeholder {
+    font-size: 18px;
+    background: url("../imagens/ícone\ busca.png") no-repeat right center;
+}
+
+.cabecalho_lista_login {
+    color: var(--cor-azul);
+    border: var(--cor-azul) solid 2px; 
+    border-radius: 30px;
+    font-weight: 700; 
+    padding: 0.10em 1em; 
+}
+
+@media screen and (max-width: 750px) {
+    .cabecalho {
+        margin: 2em;
+    }
+
+    .cabecalho_lista_link, .cabecalho_pesquisa {
+        display: none;
+    }
+
+    .cabecalho_lista_login {
+        display: block;
+    }
+}

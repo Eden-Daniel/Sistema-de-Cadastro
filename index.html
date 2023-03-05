@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/cabecalho.css">
+    <link rel="stylesheet" href="./style/formulario.css">
+    <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon">
+    <title>Sistema de Cadastro</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="#"><h1 class="cabecalho_titulo_inicio">Sistem<span class="cabecalho_titulo_final">Form</span></h1></a>
+        <ul class="cabecalho_lista">
+            <li><a class="cabecalho_lista_link" href="#">Sobre</a></li>
+            <li><a class="cabecalho_lista_link" href="#">Serviços</a></li>
+            <li><input class="cabecalho_pesquisa" type="search" placeholder="Busque aqui"></li>
+            <li><a class="cabecalho_lista_login" href="#">Login</a></li>
+        </ul>
+    </header>
+
+    <main class="container">
+        <section class="formulario">
+            <div class="formulario_cabecalho">
+                <img src="./imagens/status-1.png" alt="Etapa um de três">
+                <h2 class="formulario_titulo">Preencha os campos abaixo para cira sua conta!</h2>
+            </div>
+
+            <form class="formulatio_principal" data-formulario>
+                <fieldset class="formulario_campo">
+                    <label class="formulario_etiqueta" for="nome">Nome</label>
+                    <input class="formulario_escrita" name="nome" id="nome" type="text" minlength="3" required>
+                    <span class="mensagem_erro"></span>
+                </fieldset>
+                <fieldset class="formulario_campo">
+                    <label class="formulario_etiqueta" for="email">E-mail</label>
+                    <input class="formulario_escrita" type="email" name="email" id="email" minlength="7" required>
+                    <span class="mensagem_erro"></span>
+                </fieldset>
+                <fieldset class="formulario_campo">
+                    <label class="formulario_etiqueta" for="rg">RG</label>
+                    <input class="formulario_escrita formulario_escrita--menor" type="text" name="rg" id="rg" minlength="8" required>
+                    <span class="mensagem_erro"></span>
+                </fieldset>
+                <fieldset class="formulario_campo">
+                    <label class="formulario_etiqueta" for="CPF">CPF</label>     
+                    <input class="formulario_escrita formulario_escrita--menor" type="text" name="cpf" id="cpf" minlength="11" maxlength="14" required pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}">
+                    <span class="mensagem_erro"></span>               
+                </fieldset>
+                <fieldset class="formulario_campo">
+                    <label class="formulario_etiqueta" for="aniversario">Data de sascimento</label>
+                    <input class="formulario_escrita formulario_escrita--menor" name="aniversario" id="aniversario" type="date" required>
+                    <span class="mensagem_erro"></span>
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" name="termos" id="termos" required>
+                    <p class="formulario_termos">Li e estou ciente quanto às condições de tratamento dos meus dados conforme descrito na Política de Privacidade.</p>
+                    <span class="mensagem_erro"></span>
+                </fieldset>
+
+                <div>
+                    <input class="formulario_botao" type="submit" value="Avança" id="enviar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="js/script.js" type="module"></script>
+</body>
+</html>

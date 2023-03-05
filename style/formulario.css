@@ -1,0 +1,88 @@
+.container {
+    margin: 3em 5em;    
+}
+
+.formulario {
+    margin: 4em auto;
+    width: 30vw;
+}
+
+.formulario_cabecalho {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.formulario_titulo {
+    margin: 1em 0em;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 25px;
+}
+ .formulario_etiqueta {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+ }
+
+ .formulario_escrita {
+    border: 2px solid var(--cor-azul);
+    border-radius: 25px;
+    display: block;
+    margin-bottom: .9rem;
+    padding: 1em;
+    width: 100%;
+ }
+
+ .formulario_escrita--menor {
+    width: 50%;
+ }
+
+.formulario_termo {
+    line-height: 20px;
+
+}
+
+.formulario_botao {
+    background: var(--cor-azul);
+    border: none;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 2em auto;
+    padding: 1.2em 4em;
+}
+
+.mensagem_erro {
+    color: red;
+}
+
+.formulario_texto {
+    margin: 2em 5em;
+}
+
+.formulario_texto-negrito {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        margin: 1em .5em;
+    }
+
+    .formulario {
+        width: 80vw;
+    }   
+}
+
+@media screen and (max-width: 1020px) {
+    .container {
+        margin: 2em 3em;
+    }
+
+    .formulario {
+        width: 50vw;
+    } 
+}
